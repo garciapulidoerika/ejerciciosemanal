@@ -1,6 +1,6 @@
-function toArray() {
+function toArray(object) {
     //Implementación
-    return 0;
+    return (Object.entries(object));
 }
 
 module.exports = toArray;
