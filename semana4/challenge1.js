@@ -1,6 +1,11 @@
 function keysAndValues(objInput) {
-    //Implementación
-    return 0;
+    const ordered = {};
+    Object.keys(objInput).sort().forEach(function(key) {
+    ordered[key] = objInput[key];
+    });
+   
+    return [Object.keys(ordered), Object.values(ordered)];
 }
+
 
 module.exports = keysAndValues;
